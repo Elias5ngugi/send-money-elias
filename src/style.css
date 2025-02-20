@@ -1,0 +1,38 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #18b318;
+}
+
+.container {
+  background: white;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.mpesa {
+  color:#1ad345;
+}
+input, button {
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 7px;
+}
+.message {
+  background: #d4edda;
+  color: #25b446;
+  padding: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mpesa SendMoney</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon"type="image" href="public/mpesa-logo.png">
+</head> 
+<body>
+    <div class="container">
+        <h1 class="mpesa">Safaricom</h1>
+        <input type="text" id="phone" placeholder="Enter Phone Number" oninput="showAmount()">
+        <input type="number" id="amount" placeholder="Enter Amount" style="display:none;" oninput="showPin()">
+        <input type="password" id="pin" placeholder="Enter PIN" style="display:none;" oninput="showButton()">
+        <button id="sendButton" onclick="sendMoney()" style="display:none;">Send Money</button>
+        <div class="message" id="confirmation"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
