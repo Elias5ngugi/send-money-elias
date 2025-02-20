@@ -47,3 +47,12 @@ function sendMoney() {
     document.getElementById('confirmation').innerText = message;
     document.getElementById('confirmation').style.display = 'block';
 }
+function validatePhone() {
+    let phoneInput = document.getElementById('phone');
+    phoneInput.value = phoneInput.value.replace(/\D/g, ''); // Remove non-numeric characters
+
+    if (phoneInput.value.length > 10) {
+        phoneInput.value = phoneInput.value.slice(0, 10); // Trim excess digits
+    }
+}
+

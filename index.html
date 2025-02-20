@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1 class="mpesa">Safaricom</h1>
-        <input type="text" id="phone" placeholder="Enter Phone Number" oninput="showAmount()">
+        <input type="text" id="phone" placeholder="Enter Phone Number" oninput="validatePhone(); showAmount()" maxlength="10">
         <input type="number" id="amount" placeholder="Enter Amount" style="display:none;" oninput="showPin()">
         <input type="password" id="pin" placeholder="Enter PIN" style="display:none;" oninput="showButton()">
         <button id="sendButton" onclick="sendMoney()" style="display:none;">Send Money</button>
